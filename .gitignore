@@ -3,3 +3,4 @@ cricket_charts
 temp_video_files
 venv
 __pycache__
+.env

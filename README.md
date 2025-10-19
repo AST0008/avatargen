@@ -60,8 +60,7 @@ export GEMINI_API_KEY='your_gemini_api_key'
 # For HeyGen (avatar videos)
 export HEYGEN_API_KEY='your_heygen_api_key'
 
-# OR for D-ID (alternative avatar provider)
-export DID_API_KEY='your_did_api_key'
+
 ```
 
 ## 📁 Project Structure
@@ -88,9 +87,9 @@ python main.py
 ```
 
 This will:
-1. Generate commentary scripts (mock or AI-powered)
+1. Generate commentary scripts (AI-powered)
 2. Create cricket visualization charts
-3. Generate AI avatar videos (mock or API)
+3. Generate AI avatar videos (API)
 4. Compose final video with FFmpeg
 
 ### Run Individual Steps
@@ -110,13 +109,6 @@ python cricket_video_composer.py
 
 ## 🔧 Configuration
 
-### Using Mock Data (No API Keys)
-
-The system works perfectly without any API keys for testing:
-- Mock match data provided
-- Pre-written commentary scripts
-- Placeholder avatar videos
-- Full video composition
 
 ### Using Real APIs
 
@@ -174,21 +166,21 @@ self.colors = {
 
 Modify composition in `VideoComposer.compose_segment()`:
 ```python
-# Change avatar position, size, transitions, etc.
+# Change avatar position, size, transition s, etc.
 self.create_picture_in_picture(
     avatar_video, 
     chart_video, 
     output, 
-    position="bottomright"  # Change position
+    position="bottomright"  # Change  position
 )
 ```
 
 ## 🎥 Sample Output
 
 The generated video includes:
-- **Segment 1 (0-45s)**: Match summary with run rate graph
-- **Segment 2 (45-65s)**: Key moment highlight (avatar only)
-- **Segment 3 (65-95s)**: Statistical analysis with Manhattan chart
+- **Segment 1 (0-25s)**: Match summary with run rate graph
+- **Segment 2 (20-40s)**: Key moment highlight (avatar only)
+- **Segment 3 (40-60s)**: Statistical analysis with Manhattan chart
 - Professional transitions and overlays throughout
 
 ## 🔌 API Reference
@@ -203,12 +195,6 @@ The generated video includes:
 - **Get API Key**: [HeyGen Platform](https://app.heygen.com)
 - **Pricing**: Paid service (~$0.15-0.30 per minute)
 - **Docs**: [HeyGen API Docs](https://docs.heygen.com)
-
-### D-ID API
-- **Purpose**: Alternative AI avatar provider
-- **Get API Key**: [D-ID Platform](https://www.d-id.com)
-- **Pricing**: Free tier + paid plans
-- **Docs**: [D-ID API Docs](https://docs.d-id.com)
 
 ## 🐛 Troubleshooting
 
@@ -230,7 +216,7 @@ pip install -r requirements.txt  # Create this file if needed
 
 - **Gemini**: 60 requests/minute (free tier)
 - **HeyGen**: Check your plan limits
-- **D-ID**: 5 requests/minute (free tier)
+
 
 Add delays between API calls if needed:
 ```python
@@ -246,37 +232,6 @@ self.video_codec = "libx264"  # Try h264, h265, etc.
 self.fps = 30  # Increase for smoother video
 ```
 
-## 🚀 Production Deployment
-
-### For Real-Time Commentary
-
-**Integrate Live Match API:**
-```python
-def fetch_live_match_data(match_id):
-    # Connect to CricAPI, ESPN Cricinfo API, etc.
-    response = requests.get(f"api_url/{match_id}")
-    return response.json()
-```
-
-**Schedule Regular Updates:**
-```python
-# Run pipeline every 5 minutes
-while match_in_progress:
-    generate_commentary_update()
-    time.sleep(300)
-```
-
-**Optimize for Speed:**
-- Cache avatar videos for common commentary patterns
-- Pre-generate chart templates
-- Use video encoding presets for faster processing
-
-### Scaling Considerations
-
-- **Queue System**: Use Celery/RQ for background processing
-- **Storage**: S3/Cloud Storage for video hosting
-- **CDN**: CloudFront/CloudFlare for video delivery
-- **Monitoring**: Track API usage and costs
 
 ## 📝 License
 
@@ -303,10 +258,5 @@ For issues and questions:
 - [FFmpeg Documentation](https://ffmpeg.org/documentation.html)
 - [Google Gemini API Guide](https://ai.google.dev/docs)
 - [HeyGen API Docs](https://docs.heygen.com)
-- [D-ID API Docs](https://docs.d-id.com)
 
 ---
-
-Made with ❤️ for cricket fans and developers
-
-🏏 **Happy coding and may your run rate always be high!** 🏏
