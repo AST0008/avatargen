@@ -1,0 +1,6 @@
+{
+  "run_rate": "cricket_charts/run_rate.png",
+  "manhattan": "cricket_charts/manhattan.png",
+  "wagon_wheel": "cricket_charts/wagon_wheel.png",
+  "partnership": "cricket_charts/partnership.png"
+}

@@ -1,0 +1,118 @@
+{
+  "match_data": {
+    "match_id": "RCB_vs_KKR_IPL2024_032",
+    "teams": {
+      "batting": "Royal Challengers Bengaluru",
+      "bowling": "Kolkata Knight Riders"
+    },
+    "current_score": {
+      "runs": 176,
+      "wickets": 4,
+      "overs": 17.1
+    },
+    "recent_overs": [
+      {
+        "over": 15,
+        "runs": 14,
+        "wickets": 0,
+        "balls": [
+          1,
+          6,
+          1,
+          1,
+          0,
+          5
+        ]
+      },
+      {
+        "over": 16,
+        "runs": 9,
+        "wickets": 0,
+        "balls": [
+          1,
+          1,
+          4,
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "over": 17,
+        "runs": 12,
+        "wickets": 1,
+        "balls": [
+          6,
+          "W",
+          1,
+          1,
+          2,
+          2
+        ]
+      }
+    ],
+    "key_moments": [
+      {
+        "type": "six",
+        "over": 15.2,
+        "description": "Glenn Maxwell hammers Sunil Narine over midwicket for SIX",
+        "batsman": "Glenn Maxwell",
+        "runs": 6
+      },
+      {
+        "type": "boundary",
+        "over": 16.3,
+        "description": "Virat Kohli times it perfectly through covers for FOUR",
+        "batsman": "Virat Kohli",
+        "runs": 4
+      },
+      {
+        "type": "wicket",
+        "over": 17.2,
+        "description": "Maxwell caught at long-on off Andre Russell",
+        "batsman": "Glenn Maxwell",
+        "bowler": "Andre Russell"
+      }
+    ],
+    "partnerships": [
+      {
+        "batsmen": [
+          "Virat Kohli",
+          "Glenn Maxwell"
+        ],
+        "runs": 72,
+        "balls": 46
+      }
+    ],
+    "run_rate": {
+      "current": 10.26,
+      "required": 9.2
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "type": "summary",
+      "timestamp": "00:00:00",
+      "duration": 20,
+      "script": "\"Right then, folks, the Chinnaswamy is absolutely buzzing! RCB at 176 for 4 after 17.1. They've just lost Maxwell, which could slow them down but still look on track to surpass 200 runs. They've got the momentum and the crowd behind them, but can they keep it going? Kolkata needs to find a way to contain these final overs, or it's going to be a long night for them!\"\n",
+      "visual": "scoreboard"
+    },
+    {
+      "id": 2,
+      "type": "key_moment",
+      "timestamp": "00:00:20",
+      "duration": 20,
+      "script": "\"OUT! Maxwell gone! Andre Russell strikes! Oh, what a crucial wicket! Maxwell, looking to clear long-on, doesn't get enough on it, and it's a comfortable catch in the deep! A huge moment in this chase, can KKR capitalize on this breakthrough?\"\n",
+      "visual": "highlight_replay"
+    },
+    {
+      "id": 3,
+      "type": "statistics",
+      "timestamp": "00:00:40",
+      "duration": 20,
+      "script": "\"Right then, we're deep into the 18th over here! Bengaluru, 176 for 4, needing just over a run a ball. This partnership between Karthik and Maxwell is proving crucial, a blistering 72 runs already. The last over went for 14, shifting the momentum firmly towards RCB. They've not only upped their run rate, but are now also exceeding the required run rate by over a run an over - Kolkata need a breakthrough, and they need it now!\"\n",
+      "visual": "charts"
+    }
+  ]
+}

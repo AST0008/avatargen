@@ -1,0 +1,20 @@
+[
+  {
+    "segment_id": 1,
+    "video_id": "8a1973c029454d8db7565d29aac3f1a8",
+    "status": "completed",
+    "local_path": "avatar_videos/segment_1.mp4"
+  },
+  {
+    "segment_id": 3,
+    "video_id": "8630602221cd456ebb5cf51a08a7ebfc",
+    "status": "completed",
+    "local_path": "avatar_videos/segment_3.mp4"
+  },
+  {
+    "segment_id": 2,
+    "video_id": "6ed667c0661e42459d1b1bce6e3f0628",
+    "status": "completed",
+    "local_path": "avatar_videos/segment_2.mp4"
+  }
+]
